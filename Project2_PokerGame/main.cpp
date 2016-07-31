@@ -16,7 +16,7 @@
 #include<cmath>//math library
 #include<string>//string library
 #include<fstream>// read write file library
-#include<iomanip>
+#include<iomanip>// output format
 
 using namespace std;
 
@@ -24,26 +24,26 @@ using namespace std;
  * 
  */
 //Function Prototypes
-string Start(int i);
-int Difference(int a,int b,int c);
-void Sort(int a[],int );
+string Start(int i);//output name of cards
+int Difference(int a,int b,int c);//difference function
+void Sort(int a[],int );// sort set of cards
 
-int Pair(int [],int );
-int twoPair(int [],int );
-int ThreeOfAKind(int [],int );
-int Straight(int [],int);
-int Flush(int [],int );
-int FullHouse(int [],int );
-int FourOfAKind(int [],int);
-int RoyalFlush(int [],int);
-void Player1bet( int &,int &);
-void Player1call(int & ,int &);
-void Player2bet( int &,int &);
-void Player2call(int &,int ,int &);
+int Pair(int [],int );//determine player has only one pair
+int twoPair(int [],int );//determine player has only two pairs
+int ThreeOfAKind(int [],int );//determine player three of a kind
+int Straight(int [],int);//determine player has straight
+int Flush(int [],int );//determine player has flush
+int FullHouse(int [],int );//determine player has full house
+int FourOfAKind(int [],int);//determine player has four of a kind
+int RoyalFlush(int [],int);//determine player has royal flush
+void Player1bet( int &,int &);//store value of player1's bets
+void Player1call(int & ,int &);//store value of player1's call
+void Player2bet( int &,int &);//store value of player2's bets
+void Player2call(int &,int ,int &);//store value of player1's call
 int fold();
-void ask1(int & ,int & ,int &);
-void ask2(int & ,int & ,int &  );
-void check();
+void ask1(int & ,int & ,int &);//display which move player 1 makes
+void ask2(int & ,int & ,int &  );//display which move player 2 makes
+void check();//check
 
 
 int main(int argc, char** argv) {
